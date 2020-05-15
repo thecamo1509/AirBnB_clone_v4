@@ -40,12 +40,12 @@
 			</div>
 			<div class="amenities">
 				<h3>Amenities</h3>
-				<h4>&nbsp;</h4>
+				<h4 style="white-space:nowrap; text-overflow: ellipsis; overflow: visible;">&nbsp;</h4>
 				<div class="popover">
 					<ul>
 						{% for amenity in amenities %}
 						<li>
-							<INPUT data-name=":amenity_name" data-id=":amenity_id" type="checkbox"
+							<INPUT data-name="{{amenity.name}}" data-id="{{amenity.id}}" type="checkbox"
 								style="padding-right: 10px;">
 							{{ amenity.name }}
 						</li>
